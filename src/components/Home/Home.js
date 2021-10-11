@@ -12,8 +12,12 @@ function Home() {
           alt=""
         />
       </div>
-      <p>Appetizers</p>
+
       {/*appetizer 2x*/}
+      <div className="foodType">
+        <span className="foodTypeText">Appetizers</span>
+      </div>
+
       <div className="homeRow">
         <Food
           title="Pork Gyosa Dumplings"
@@ -28,8 +32,11 @@ function Home() {
           rating="4,1"
         />
       </div>
-      <p>Main Dishes</p>
+
       {/*main dish 6x*/}
+      <div className="foodType">
+        <span className="foodTypeText">Main Dishes</span>
+      </div>
       <div className="homeRow">
         <Food
           title="Crisp Pork Belly Ramen"
@@ -56,8 +63,11 @@ function Home() {
           rating="4,8"
         />
       </div>
-      <p>Beverages</p>
+
       {/*beverage 1x*/}
+      <div className="foodType">
+        <span className="foodTypeText">Beverages</span>
+      </div>
       <div className="homeRow">
         <Food
           title="Raspberry Peach Lemonade"
@@ -72,8 +82,11 @@ function Home() {
           rating="4"
         />
       </div>
-      <p>Desserts</p>
+
       {/*dessert 1x*/}
+      <div className="foodType">
+        <span className="foodTypeText">Desserts</span>
+      </div>
       <div className="homeRow">
         <Food
           title="Molten Chocolate Lava Cake"

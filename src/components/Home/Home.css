@@ -17,3 +17,10 @@
   margin-right: 5px;
   margin-top: 80px;
 }
+
+.foodType {
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  margin-left: 100px;
+}
