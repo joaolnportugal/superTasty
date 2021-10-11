@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import { SearchOutlined, ShoppingCart } from "@material-ui/icons";
 
+
 function header() {
   return (
     <div className="header">
