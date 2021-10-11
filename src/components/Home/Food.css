@@ -23,13 +23,16 @@
 }
 
 .foodInfo {
-  width: 57%;
+  color: white;
   height: 100px;
   margin-bottom: 15px;
+  margin-top: 24px;
 }
 
 .foodRating {
   margin-top: -15px;
+  display: flex;
+  letter-spacing: -1px;
 }
 
 .food > button {
@@ -38,4 +41,5 @@
   margin-top: -5;
   border: transparent;
   color: black;
+  margin-bottom: 24px;
 }
