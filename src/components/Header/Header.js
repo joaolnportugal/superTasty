@@ -2,8 +2,10 @@ import React from "react";
 import "./Header.css";
 import { SearchOutlined, ShoppingCart } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../../StateProvider";
 
-function header() {
+function Header() {
+  const [{ cart }, dispatch] = useStateValue(); 
   return (
     <div className="header">
       <Link to="/">
@@ -31,11 +33,11 @@ function header() {
       <Link to="/checkout">
         <div className="header_optionCart">
           <ShoppingCart />
-          <span className="header_optionText header_cartCount ">0</span>
+          <span className="header_optionText header_cartCount ">{cart.length}</span>
         </div>
       </Link>
     </div>
   );
 }
 
-export default header;
+export default Header;

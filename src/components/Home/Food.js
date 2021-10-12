@@ -3,8 +3,8 @@ import { useStateValue } from "../../StateProvider";
 import "./Food.css";
 
 function Food({ title, image, price, rating }) {
-  const [ state, dispatch] = useStateValue();
-  console.log('cenas no carrinho');
+  const [{ cart }, dispatch] = useStateValue();
+  console.log("cenas no carrinho", cart);
 
   const addToCart = () => {
     //dispatch the item into the data layer
