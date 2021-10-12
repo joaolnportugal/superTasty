@@ -16,6 +16,7 @@ function Checkout() {
         />
         <div>
           <h2 className="checkoutTitle">Your shopping cart</h2>
+          
           {cart.map((item) => (
             <CheckoutFood
               title={item.title}
