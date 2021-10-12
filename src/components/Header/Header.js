@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 
 function Header() {
-  const [{ cart }, dispatch] = useStateValue(); 
+  const [{ cart }, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/">
         <img
           className="header_logo"
           alt=""
-          src="https://static.eattasty.com/cloudinary/eattasty/image/upload/q_auto/v1530117907/EatTasty-Logo_Bg_ejdecz.png"
+          src="https://dl.dropboxusercontent.com/s/4snbyg1ko6jm5hr/super%20tasty%20yellow%20logo.jpg?dl=0"
         />
       </Link>
 
@@ -22,18 +22,23 @@ function Header() {
       </div>
 
       <div className="header_navi">
-        <div className="header_option">
-          <span className="header_optionText">Sign In</span>
-        </div>
+        <Link to="/login">
+          <div className="header_option">
+            <span className="header_optionText">Sign In</span>
+          </div>
 
-        <div className="header_option">
-          <span className="header_optionText">Create Account</span>
-        </div>
+          <div className="header_option">
+            <span className="header_optionText">Create Account</span>
+          </div>
+        </Link>
       </div>
+
       <Link to="/checkout">
         <div className="header_optionCart">
           <ShoppingCart />
-          <span className="header_optionText header_cartCount ">{cart.length}</span>
+          <span className="header_optionText header_cartCount ">
+            {cart.length}
+          </span>
         </div>
       </Link>
     </div>

@@ -11,6 +11,11 @@ function Home() {
           src="https://wallpaperaccess.com/full/1401021.jpg"
           alt=""
         />
+        <img
+          className="superTastyTransparent"
+          src="https://dl.dropboxusercontent.com/s/dnxtnfb2yw5hiok/super%20tasty%20opaco%20png.png?dl=0"
+          alt=""
+        />
       </div>
 
       {/*appetizer 2x*/}
