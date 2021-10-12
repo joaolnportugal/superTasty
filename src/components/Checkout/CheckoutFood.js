@@ -19,6 +19,7 @@ function CheckoutFood({ id, title, price, rating, image }) {
           <small>€</small>
           <strong>{price}</strong>
         </p>
+        <button onClick={removeFromCart}>Remove From Cart</button>
       </div>
       <div className="checkoutFoodRating">
         {Array(rating)
@@ -27,7 +28,6 @@ function CheckoutFood({ id, title, price, rating, image }) {
             <p>{rating}⭐</p>
           ))}
       </div>
-      <button onClick={removeFromCart}>Remove From Cart</button>
     </div>
   );
 }
