@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { SearchOutlined, ShoppingCart } from "@material-ui/icons";
 import { Link } from "react-router-dom";
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../stateProvider";
 
 function Header() {
   const [{ cart }, dispatch] = useStateValue();

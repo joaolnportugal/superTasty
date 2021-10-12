@@ -1,5 +1,5 @@
 import React from "react";
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../stateProvider";
 import "./Food.css";
 
 function Food({ title, image, price, rating }) {

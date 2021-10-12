@@ -2,7 +2,7 @@ import React from "react";
 import "./Checkout.css";
 import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../../stateProvider";
 import { getCartTotal } from "../../reducer";
 
 function Subtotal() {
