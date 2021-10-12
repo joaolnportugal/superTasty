@@ -1,7 +1,9 @@
 import React from "react";
 import "./Food.css";
 
+
 function Food({ title, image, price, rating }) {
+ 
   return (
     <div className="food">
       <div className="foodInfo">
@@ -15,7 +17,7 @@ function Food({ title, image, price, rating }) {
         </div>
       </div>
       <img src={image} alt="" width="300px" height="300px" />
-      <button>Add to order</button>
+      <button >Add to cart</button>
     </div>
   );
 }

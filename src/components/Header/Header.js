@@ -1,16 +1,19 @@
 import React from "react";
 import "./Header.css";
 import { SearchOutlined, ShoppingCart } from "@material-ui/icons";
-
+import { Link } from "react-router-dom";
 
 function header() {
   return (
     <div className="header">
-      <img
-        className="header_logo"
-        alt=""
-        src="https://static.eattasty.com/cloudinary/eattasty/image/upload/q_auto/v1530117907/EatTasty-Logo_Bg_ejdecz.png"
-      />
+      <Link to="/">
+        <img
+          className="header_logo"
+          alt=""
+          src="https://static.eattasty.com/cloudinary/eattasty/image/upload/q_auto/v1530117907/EatTasty-Logo_Bg_ejdecz.png"
+        />
+      </Link>
+
       <div className="header-searchBar">
         <input className="header_searchInput" type="text" />
         <SearchOutlined className="header_searchIcon" />
@@ -25,11 +28,12 @@ function header() {
           <span className="header_optionText">Create Account</span>
         </div>
       </div>
-
-      <div className="header_optionCart">
-        <ShoppingCart />
-        <span className="header_optionText header_cartCount ">0</span>
-      </div>
+      <Link to="/checkout">
+        <div className="header_optionCart">
+          <ShoppingCart />
+          <span className="header_optionText header_cartCount ">0</span>
+        </div>
+      </Link>
     </div>
   );
 }
