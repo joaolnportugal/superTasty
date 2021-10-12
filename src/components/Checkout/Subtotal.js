@@ -1,8 +1,11 @@
 import React from "react";
 import "./Checkout.css";
 import CurrencyFormat from "react-currency-format";
+import { useStateValue } from "../../StateProvider";
+import { getCartTotal } from "../../reducer";
 
 function Subtotal() {
+  const [{ cart }, dispatch] = useStateValue();
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -11,12 +14,12 @@ function Subtotal() {
             {" "}
             <p>
               {" "}
-              Subtotal(0 items):<strong>0</strong>
+              Subtotal({cart.length} items):<strong>{value}</strong>
             </p>
           </>
         )}
         decimalScale={2}
-        value={0}
+        value={getCartTotal(cart)}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"€"}
