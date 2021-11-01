@@ -21,6 +21,7 @@
 }
 
 .homeRow {
+  border-radius: 200px;
   display: flex;
   z-index: 1;
   margin-left: 5px;
@@ -33,4 +34,8 @@
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   margin-left: 100px;
+}
+
+.homeRow > Food {
+  border-radius: 100px;
 }

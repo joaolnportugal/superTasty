@@ -49,7 +49,7 @@ function Home() {
           id="9969971"
           title="Crisp Pork Belly Ramen"
           price={6.9}
-          image="https://content.cooklybookly.com/e15d9418-f6b8-11ea-a422-0b030ab87222/image/9f74e35e-188b-11eb-bc0e-2bcc6df3f9c1/9f74e35e-188b-11eb-bc0e-2bcc6df3f9c1.jpg"
+          image="https://content.cooklybookly.com/e15d9418-f6b8-11ea-a422-0b030ab87222/image/9f74e35e-188b-11eb-bc0e-2bcc6df3f9c1/9f74e35e-188b-11eb-bc0e-2bcc6df3f9c1.jpg" 
           rating="4,3"
         />
         <Food
